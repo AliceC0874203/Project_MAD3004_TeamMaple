@@ -7,7 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		995D548928E3C47400943C2F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D548828E3C47400943C2F /* main.swift */; };
+		995D549228E3C4B700943C2F /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D549028E3C4B700943C2F /* main.swift */; };
+		995D549328E3C4B700943C2F /* management.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D549128E3C4B700943C2F /* management.swift */; };
+		995D549628E3C53E00943C2F /* Programmer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D549528E3C53E00943C2F /* Programmer.swift */; };
+		995D549828E3C58500943C2F /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D549728E3C58500943C2F /* Manager.swift */; };
+		995D549A28E3C59000943C2F /* Tester.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D549928E3C59000943C2F /* Tester.swift */; };
+		995D549F28E3C5F200943C2F /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D549E28E3C5F200943C2F /* Vehicle.swift */; };
+		995D54A128E3C5FD00943C2F /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D54A028E3C5FC00943C2F /* Car.swift */; };
+		995D54A328E3C60700943C2F /* Motorcycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D54A228E3C60700943C2F /* Motorcycle.swift */; };
+		995D54A528E3C64B00943C2F /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D54A428E3C64B00943C2F /* Employee.swift */; };
+		995D54A728E3C6D600943C2F /* Permanent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D54A628E3C6D600943C2F /* Permanent.swift */; };
+		995D54A928E3C6E700943C2F /* Temporary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D54A828E3C6E700943C2F /* Temporary.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +34,17 @@
 
 /* Begin PBXFileReference section */
 		995D548528E3C47400943C2F /* Project_MAD3004_TeamMaple */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Project_MAD3004_TeamMaple; sourceTree = BUILT_PRODUCTS_DIR; };
-		995D548828E3C47400943C2F /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		995D549028E3C4B700943C2F /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		995D549128E3C4B700943C2F /* management.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = management.swift; sourceTree = "<group>"; };
+		995D549528E3C53E00943C2F /* Programmer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Programmer.swift; sourceTree = "<group>"; };
+		995D549728E3C58500943C2F /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		995D549928E3C59000943C2F /* Tester.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tester.swift; sourceTree = "<group>"; };
+		995D549E28E3C5F200943C2F /* Vehicle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
+		995D54A028E3C5FC00943C2F /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		995D54A228E3C60700943C2F /* Motorcycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Motorcycle.swift; sourceTree = "<group>"; };
+		995D54A428E3C64B00943C2F /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		995D54A628E3C6D600943C2F /* Permanent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permanent.swift; sourceTree = "<group>"; };
+		995D54A828E3C6E700943C2F /* Temporary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temporary.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +77,59 @@
 		995D548728E3C47400943C2F /* Project_MAD3004_TeamMaple */ = {
 			isa = PBXGroup;
 			children = (
-				995D548828E3C47400943C2F /* main.swift */,
+				995D549428E3C50100943C2F /* Work Space */,
+				995D548F28E3C48D00943C2F /* Test Files */,
 			);
 			path = Project_MAD3004_TeamMaple;
+			sourceTree = "<group>";
+		};
+		995D548F28E3C48D00943C2F /* Test Files */ = {
+			isa = PBXGroup;
+			children = (
+				995D549028E3C4B700943C2F /* main.swift */,
+				995D549128E3C4B700943C2F /* management.swift */,
+			);
+			path = "Test Files";
+			sourceTree = "<group>";
+		};
+		995D549428E3C50100943C2F /* Work Space */ = {
+			isa = PBXGroup;
+			children = (
+				995D549D28E3C5D600943C2F /* Part 3 */,
+				995D549C28E3C5D000943C2F /* Part 2 */,
+				995D549B28E3C5C200943C2F /* Part 1 */,
+			);
+			path = "Work Space";
+			sourceTree = "<group>";
+		};
+		995D549B28E3C5C200943C2F /* Part 1 */ = {
+			isa = PBXGroup;
+			children = (
+				995D549528E3C53E00943C2F /* Programmer.swift */,
+				995D549728E3C58500943C2F /* Manager.swift */,
+				995D549928E3C59000943C2F /* Tester.swift */,
+				995D54A428E3C64B00943C2F /* Employee.swift */,
+			);
+			path = "Part 1";
+			sourceTree = "<group>";
+		};
+		995D549C28E3C5D000943C2F /* Part 2 */ = {
+			isa = PBXGroup;
+			children = (
+				995D549E28E3C5F200943C2F /* Vehicle.swift */,
+				995D54A028E3C5FC00943C2F /* Car.swift */,
+				995D54A228E3C60700943C2F /* Motorcycle.swift */,
+			);
+			path = "Part 2";
+			sourceTree = "<group>";
+		};
+		995D549D28E3C5D600943C2F /* Part 3 */ = {
+			isa = PBXGroup;
+			children = (
+				995D54A628E3C6D600943C2F /* Permanent.swift */,
+				995D54A828E3C6E700943C2F /* Temporary.swift */,
+			);
+			path = "Part 3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,7 +190,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				995D548928E3C47400943C2F /* main.swift in Sources */,
+				995D549F28E3C5F200943C2F /* Vehicle.swift in Sources */,
+				995D54A928E3C6E700943C2F /* Temporary.swift in Sources */,
+				995D54A528E3C64B00943C2F /* Employee.swift in Sources */,
+				995D549228E3C4B700943C2F /* main.swift in Sources */,
+				995D549A28E3C59000943C2F /* Tester.swift in Sources */,
+				995D549628E3C53E00943C2F /* Programmer.swift in Sources */,
+				995D54A328E3C60700943C2F /* Motorcycle.swift in Sources */,
+				995D54A728E3C6D600943C2F /* Permanent.swift in Sources */,
+				995D549328E3C4B700943C2F /* management.swift in Sources */,
+				995D54A128E3C5FD00943C2F /* Car.swift in Sources */,
+				995D549828E3C58500943C2F /* Manager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
