@@ -5,7 +5,7 @@ Lambton College Fall 2022.
 #DO NOT TOUCH TEST FILES FOLDER.
 
 #Team Members
-- Pennapar Supawatrai               203
+- Pennapar Supawatrai (Alice)       203
 - Malsha Parami Depakarage          063
 - Tilak Acharya                     747
 - Pavit Kalra                       150
