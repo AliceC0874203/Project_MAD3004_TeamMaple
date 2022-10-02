@@ -47,4 +47,14 @@ class Employee {
         self._vehicle = vehicle;
 
     }
+    
+    func calculateAge(birthYear: Int) -> Int {
+        var year = 1988;
+        year = birthYear;
+        let dob = Date(year: year, month: 1, day: 1)
+        let age = dob.age
+
+        return age;
+    }
+    
 }
