@@ -22,6 +22,5 @@ class Employee {
         self.monthlyIncome = monthlyIncome;
         self.occupationRate = occupationRate;
         self.vehicle = vehicle;
-        
     }
 }

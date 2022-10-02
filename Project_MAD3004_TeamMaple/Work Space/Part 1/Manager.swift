@@ -9,5 +9,5 @@ import Foundation
 
 class Manager: Employee {
     var numberOfTravelDays : Int = 0;
-    var numberOfNewClintsBought : Int = 0 ;
+    var numberOfNewClintsBought : Int = 0;
 }

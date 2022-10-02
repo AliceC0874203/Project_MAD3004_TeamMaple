@@ -9,4 +9,5 @@ import Foundation
 
 class Tester: Employee {
     var numberOfBugsManagedToSolve: Int=0;
+    
 }
