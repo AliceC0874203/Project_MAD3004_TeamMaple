@@ -28,9 +28,16 @@ class Employee {
             get { return _monthlyIncome }
         }
     
-    private var _occupationRate : Int;
+    private var _occupationRate : Int = 100;
         var occupationRate: Int {
-            get { return _occupationRate }
+            get {
+                if(self.occupationRate < 10){
+                    return 10;
+                }else if(self.occupationRate > 100){
+                    return 100;
+                }
+                return _occupationRate
+            }
         }
     
     private var _vehicle : String;
@@ -38,14 +45,15 @@ class Employee {
             get { return _vehicle }
         }
     
-    init(name: String, birthYear: Int, age: Int, monthlyIncome: Double, occupationRate: Int, vehicle: String) {
+    init(name: String, birthYear: Int, age: Int, monthlyIncome: Double, occupationRate: Int, vehicle: Vehicle) {
         self._name = name;
         self._birthYear = birthYear;
         self._age = age;
         self._monthlyIncome = monthlyIncome;
         self._occupationRate = occupationRate;
         self._vehicle = vehicle;
-
+        
+        print("We have a new employee:");
     }
     
     func calculateAge(birthYear: Int) -> Int {
