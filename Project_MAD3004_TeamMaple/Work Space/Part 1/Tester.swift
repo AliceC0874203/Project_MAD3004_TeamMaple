@@ -9,7 +9,7 @@ import Foundation
 
 class Tester: Employee {
     private var _numberOfBugsManagedToSolve : Int=0;
-        var numberOfBugsManagedToSolve: Int {
-            get { return _numberOfBugsManagedToSolve }
-        }
+    var numberOfBugsManagedToSolve: Int {
+        get { return _numberOfBugsManagedToSolve }
+    }
 }

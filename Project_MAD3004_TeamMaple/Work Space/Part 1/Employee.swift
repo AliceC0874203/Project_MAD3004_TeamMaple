@@ -45,6 +45,6 @@ class Employee {
         self._monthlyIncome = monthlyIncome;
         self._occupationRate = occupationRate;
         self._vehicle = vehicle;
-        
+
     }
 }
