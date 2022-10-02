@@ -8,5 +8,5 @@
 import Foundation
 
 class Motorcycle: Vehicle {
-    
+    private var _sidecar: Bool = false;
 }

@@ -8,5 +8,6 @@
 import Foundation
 
 class Car: Vehicle {
-    
+    private var _gear: String = "Automatic";
+    private var _type: String = "Sport";
 }

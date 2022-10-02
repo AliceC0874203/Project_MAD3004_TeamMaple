@@ -8,5 +8,8 @@
 import Foundation
 
 class Vehicle {
-    
+    private var _make: String = "Suzuki";
+    private var _plate: Int = 0;
+    private var _color: String = "Black";
+    private var _category: String = "Sport";
 }
