@@ -8,5 +8,8 @@
 import Foundation
 
 class Programmer: Employee {
-    var numberOfProjectsCompleted : Int=0;
+    private var _numberOfProjectsCompleted : Int=0;
+        var numberOfProjectsCompleted: Int {
+            get { return _numberOfProjectsCompleted }
+        }
 }

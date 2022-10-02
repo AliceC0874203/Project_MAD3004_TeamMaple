@@ -8,6 +8,14 @@
 import Foundation
 
 class Manager: Employee {
-    var numberOfTravelDays : Int = 0;
-    var numberOfNewClintsBought : Int = 0 ;
+    private var _numberOfTravelDays : Int=0;
+    private var _numberOfNewClintsBought : Int=0;
+    
+        var numberOfTravelDays: Int {
+            get { return _numberOfTravelDays }
+        }
+    
+        var numberOfNewClintsBought: Int {
+            get { return _numberOfNewClintsBought }
+        }
 }

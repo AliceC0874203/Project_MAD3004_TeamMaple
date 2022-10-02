@@ -8,5 +8,8 @@
 import Foundation
 
 class Tester: Employee {
-    var numberOfBugsManagedToSolve: Int=0;
+    private var _numberOfBugsManagedToSolve : Int=0;
+        var numberOfBugsManagedToSolve: Int {
+            get { return _numberOfBugsManagedToSolve }
+        }
 }
