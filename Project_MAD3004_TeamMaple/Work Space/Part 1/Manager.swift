@@ -11,11 +11,11 @@ class Manager: Employee {
     private var _numberOfTravelDays : Int=0;
     private var _numberOfNewClintsBought : Int=0;
     
-        var numberOfTravelDays: Int {
-            get { return _numberOfTravelDays }
-        }
+    var numberOfTravelDays: Int {
+        get { return _numberOfTravelDays }
+    }
     
-        var numberOfNewClintsBought: Int {
-            get { return _numberOfNewClintsBought }
-        }
+    var numberOfNewClintsBought: Int {
+        get { return _numberOfNewClintsBought }
+    }
 }

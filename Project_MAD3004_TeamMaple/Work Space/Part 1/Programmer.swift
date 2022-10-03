@@ -9,7 +9,7 @@ import Foundation
 
 class Programmer: Employee {
     private var _numberOfProjectsCompleted : Int=0;
-        var numberOfProjectsCompleted: Int {
-            get { return _numberOfProjectsCompleted }
-        }
+    var numberOfProjectsCompleted: Int {
+        get { return _numberOfProjectsCompleted }
+    }
 }
