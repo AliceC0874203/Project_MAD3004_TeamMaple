@@ -12,18 +12,31 @@ class Tester: Employee {
     
     var nbBugs: Int {
         get { return _nbBugs }
+        set { _nbBugs = newValue }
     }
     
-    convenience init(name: String, birthYear: Int, nbBugs: Int, rate: Int) {        self.init(name: name, birthYear: birthYear, nbBugs: nbBugs, rate: rate)
+    //initialisation as per test case
+    init(name: String, birthYear: Int,nbBugs: Int,rate:Int) {
+        super.init(name: name, birthYear: birthYear, rate: rate)
         self._nbBugs = nbBugs;
+        printMessage()
     }
-
-    convenience init(name: String, birthYear: Int, nbBugs: Int, rate: Int, employeeVehicle: Vehicle) {
-        self.init(name: name, birthYear: birthYear, nbBugs: nbBugs, rate: rate, employeeVehicle: employeeVehicle)
-        self._nbBugs = nbBugs;
-    }
+    //end of initialisation as per test case
+    
+    
+//    convenience init(name: String, birthYear: Int, nbBugs: Int, rate: Int) {        self.init(name: name, birthYear: birthYear, nbBugs: nbBugs, rate: rate)
+//        self._nbBugs = nbBugs;
+//        printMessage()
+//    }
+//
+//    convenience init(name: String, birthYear: Int, nbBugs: Int, rate: Int, employeeVehicle: Vehicle) {
+//        self.init(name: name, birthYear: birthYear, nbBugs: nbBugs, rate: rate, employeeVehicle: employeeVehicle)
+//        self._nbBugs = nbBugs;
+//        printMessage()
+//    }
 
     func printMessage() {
-        print("We have a new employee: \(name), a tester");
+        printData("We have a new employee: \(name), a tester")
+//        print("We have a new employee: \(name), a tester");
     }
 }

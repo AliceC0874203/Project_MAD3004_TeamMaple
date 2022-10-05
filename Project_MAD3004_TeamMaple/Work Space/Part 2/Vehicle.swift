@@ -8,8 +8,23 @@
 import Foundation
 
 class Vehicle {
-    private var _make: String = "Suzuki";
-    private var _plate: Int = 0;
-    private var _color: String = "Black";
-    private var _category: String = "Sport";
+    private var _make: String = "";
+    private var _plate: String = "";
+    private var _color: String = "";
+    private var _category: String = "";
+    
+    init(){
+        self._make = ""
+        self._plate = ""
+        self._color = ""
+        self._category = ""
+    }
+    
+    init(_make: String, _plate: String, _color: String, _category: String) {
+        self._make = _make
+        self._plate = _plate
+        self._color = _color
+        self._category = _category
+    }
+    
 }
