@@ -15,15 +15,19 @@ class Vehicle {
     
     var make:String{
         get{return _make}
+        set{ _make = newValue }
     }
     var plate:String{
         get{return _plate}
+        set{ _plate = newValue }
     }
     var color:String{
         get{return _color}
+        set{ _color = newValue }
     }
     var category:String{
         get{return _category}
+        set{ _category = newValue }
     }
     
     init(){

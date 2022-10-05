@@ -11,6 +11,21 @@ class Car: Vehicle {
     private var _gear: String = "";
     private var _type: String = "";
     
+    var gear:String{
+        get{return _gear}
+        set{_gear = newValue}
+    }
+    var type:String{
+        get{return _type}
+        set{_type = newValue}
+    }
+    
+    override init() {
+        super.init()
+        self._gear = ""
+        self._type = ""
+    }
+    
     init(gear: String, type: String) {
         super.init()
         self._gear = gear

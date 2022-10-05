@@ -64,7 +64,7 @@ class Employee {
         self._age = 0
         self._monthlyIncome = 0;
         self._rate = 0;
-        self._employeeVehicle = Car(make: "Lamborghini", plate: "Custom Plate", color: "White", category: "Family", gear: "Manual", type: "Sport")
+        self._employeeVehicle = Car()
     }
 
     //initialisation as per test case
@@ -74,7 +74,7 @@ class Employee {
         self._age = 0
         self._monthlyIncome = 0;
         self._rate = 0;
-        self._employeeVehicle = Car(make: "Lamborghini", plate: "Custom Plate", color: "White", category: "Family", gear: "Manual", type: "Sport")
+        self._employeeVehicle = Car()
     }
     init(name: String,birthYear:Int) {
         self._name = name;
@@ -82,7 +82,7 @@ class Employee {
         self._age = 0
         self._monthlyIncome = 0;
         self._rate = 0;
-        self._employeeVehicle = Car(make: "Lamborghini", plate: "Custom Plate", color: "White", category: "Family", gear: "Manual", type: "Sport")
+        self._employeeVehicle = Car()
     }
     init(name: String,birthYear:Int,rate: Int) {
         self._name = name;
@@ -98,7 +98,7 @@ class Employee {
         else {
             self._rate = rate
         }
-        self._employeeVehicle = Car(make: "Lamborghini", plate: "Custom Plate", color: "White", category: "Family", gear: "Manual", type: "Sport")
+        self._employeeVehicle = Car()
     }
     init(name: String,birthYear:Int,employeeVehicle: Vehicle) {
         self._name = name;
@@ -176,6 +176,10 @@ class Employee {
     
     func printData(_ msg :String = "We have a new employee"){
         print(msg)
+    }
+    
+    func printData(_msg:String,vehicle:Vehicle){
+        
     }
     
     

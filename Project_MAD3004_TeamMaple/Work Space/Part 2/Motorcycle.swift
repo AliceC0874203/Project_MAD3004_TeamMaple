@@ -10,6 +10,16 @@ import Foundation
 class Motorcycle: Vehicle {
     private var _sidecar: Bool = false;
     
+    var sidecar:Bool{
+        get{return _sidecar}
+        set{_sidecar = newValue}
+    }
+    
+    override init() {
+        super.init()
+        self._sidecar = false
+    }
+    
     init(sidecar: Bool) {
         super.init()
         self._sidecar = sidecar
