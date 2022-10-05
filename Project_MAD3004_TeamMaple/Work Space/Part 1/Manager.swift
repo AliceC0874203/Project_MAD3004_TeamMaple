@@ -33,6 +33,18 @@ class Manager: Employee {
         self._nbClients = nbClients;
         printMessage()
     }
+    init(name: String, birthYear: Int,nbClients: Int,nbTravelDays: Int, employeeVehicle: Vehicle) {
+        super.init(name: name, birthYear: birthYear,employeeVehicle: employeeVehicle)
+        self._nbTravelDays = nbTravelDays;
+        self._nbClients = nbClients;
+        printMessage()
+    }
+    init(name: String, birthYear: Int,nbClients: Int,nbTravelDays: Int,rate:Int, employeeVehicle: Vehicle) {
+        super.init(name: name, birthYear: birthYear,rate: rate,employeeVehicle: employeeVehicle)
+        self._nbTravelDays = nbTravelDays;
+        self._nbClients = nbClients;
+        printMessage()
+    }
     
 //    init(name: String, birthYear: Int, age: Int, monthlyIncome: Double, rate: Int,nbTravelDays: Int,nbClients: Int) {
 //        super.init(name: name, birthYear: birthYear, age: age, monthlyIncome: monthlyIncome, rate: rate)
@@ -71,7 +83,7 @@ class Manager: Employee {
 //    }
     
     func printMessage() {
-        printData("We have a new employee: \(name), a manager")
+        printData("We have a new employee: \(name), a manager.")
 //        print("We have a new employee: \(name), a manager");
     }
     

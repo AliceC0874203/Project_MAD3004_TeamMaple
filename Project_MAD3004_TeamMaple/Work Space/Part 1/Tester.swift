@@ -21,6 +21,11 @@ class Tester: Employee {
         self._nbBugs = nbBugs;
         printMessage()
     }
+    init(name: String, birthYear: Int,nbBugs: Int,rate:Int, employeeVehicle: Vehicle) {
+        super.init(name: name, birthYear: birthYear, rate: rate,employeeVehicle: employeeVehicle)
+        self.nbBugs = nbBugs;
+        printMessage()
+    }
     //end of initialisation as per test case
     
     
