@@ -27,12 +27,12 @@ struct Management {
     }
     mutating func hire_test2() {
         employees = []
-//        employees.append(Manager(name: "Serge", birthYear: 1985, nbClients: 30, nbTravelDays: 4, employeeVehicle: vt1))
-//        employees.append(Manager(name: "Cindy", birthYear: 1974, nbClients: 20, nbTravelDays: 6, rate: 80, employeeVehicle: vt2))
-//        employees.append(Programmer(name: "Paul", birthYear: 1993, nbProjects: 3, rate: 75, employeeVehicle: m1))
-//        employees.append(Tester(name: "Pierre", birthYear: 1987, nbBugs: 124, rate: 50, employeeVehicle: m2))
-//        employees.append(Programmer(name: "Matt", birthYear: 1981, nbProjects: 5, rate: 110, employeeVehicle: vt4))
-//        employees.append(Programmer(name: "Sarah", birthYear: 1986, nbProjects: 3, employeeVehicle: vt3))
+        employees.append(Manager(name: "Serge", birthYear: 1985, nbClients: 30, nbTravelDays: 4, employeeVehicle: vt1))
+        employees.append(Manager(name: "Cindy", birthYear: 1974, nbClients: 20, nbTravelDays: 6, rate: 80, employeeVehicle: vt2))
+        employees.append(Programmer(name: "Paul", birthYear: 1993, nbProjects: 3, rate: 75, employeeVehicle: m1))
+        employees.append(Tester(name: "Pierre", birthYear: 1987, nbBugs: 124, rate: 50, employeeVehicle: m2))
+        employees.append(Programmer(name: "Matt", birthYear: 1981, nbProjects: 5, rate: 110, employeeVehicle: vt4))
+        employees.append(Programmer(name: "Sarah", birthYear: 1986, nbProjects: 3, employeeVehicle: vt3))
         for item in employees {
             print("-------------------------")
             print(item)

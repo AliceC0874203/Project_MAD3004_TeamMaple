@@ -100,6 +100,29 @@ class Employee {
         }
         self._employeeVehicle = Car(make: "Lamborghini", plate: "Custom Plate", color: "White", category: "Family", gear: "Manual", type: "Sport")
     }
+    init(name: String,birthYear:Int,employeeVehicle: Vehicle) {
+        self._name = name;
+        self._birthYear = birthYear;
+        self._age = 0
+        self._monthlyIncome = 0;
+        self._employeeVehicle = employeeVehicle
+    }
+    init(name: String,birthYear:Int,rate: Int,employeeVehicle: Vehicle) {
+        self._name = name;
+        self._birthYear = birthYear;
+        self._age = 0
+        self._monthlyIncome = 0;
+        if(rate < 10) {
+            self._rate = 10
+        }
+        else if (rate > 100){
+            self._rate = 100
+        }
+        else {
+            self._rate = rate
+        }
+        self._employeeVehicle = employeeVehicle
+    }
     //end of initialisation as per test case
     
 //    init(name: String, birthYear: Int, age: Int, monthlyIncome: Double, rate: Int) {

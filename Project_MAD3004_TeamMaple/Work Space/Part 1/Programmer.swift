@@ -8,6 +8,7 @@
 import Foundation
 
 class Programmer: Employee {
+    
     private var _nbProjects: Int=0;
     
     var nbProjects: Int {
@@ -23,6 +24,16 @@ class Programmer: Employee {
     }
     init(name: String, birthYear: Int,nbProjects: Int,rate:Int) {
         super.init(name: name, birthYear: birthYear, rate: rate)
+        self._nbProjects = nbProjects;
+        printMessage()
+    }
+    init(name: String, birthYear: Int,nbProjects: Int,rate:Int, employeeVehicle: Vehicle) {
+        super.init(name: name, birthYear: birthYear, rate: rate,employeeVehicle: employeeVehicle)
+        self._nbProjects = nbProjects;
+        printMessage()
+    }
+    init(name: String, birthYear: Int,nbProjects: Int,employeeVehicle: Vehicle) {
+        super.init(name: name, birthYear: birthYear,employeeVehicle: employeeVehicle)
         self._nbProjects = nbProjects;
         printMessage()
     }
