@@ -17,13 +17,11 @@ protocol EmployeeContract {
 }
 
 extension Employee : EmployeeContract {
+    
+    private static var _contract : Contract?
     var contract: Contract? {
-        get {
-           return contract
-        }
-        set {
-            newValue
-        }
+        get { return Employee._contract }
+        set { Employee._contract = newValue }
     }
         
     func signContract(contract: Contract) {
