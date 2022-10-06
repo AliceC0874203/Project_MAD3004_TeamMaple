@@ -6,7 +6,9 @@
 //
 
 import Foundation
+class Contract {
 
+}
 extension Employee {
     func signContract<T>(contract: T) {
         //do something

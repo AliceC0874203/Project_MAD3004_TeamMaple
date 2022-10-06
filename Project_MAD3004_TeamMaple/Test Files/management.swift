@@ -70,23 +70,23 @@ struct Management {
         print("-------------------------")
         print("Contracts: ")
         print("-------------------------")
-//        for item in employees {
-//            if let contract = item.contract {
-//                print(item.contractInfo(), contract)
-//            }
-//        }
-//        print("-------------------------")
-//        let p5 = Permanent(nbChildren: 1, married: true, monthlySalary: 5000, bonusPerChildPerMonth: 200, accumulatedDays: 30)
-//        Matt.signContract(contract: p5)
-//        print("-------------------------")
-//        print("Contracts: ")
-//        print("-------------------------")
-//        for item in employees {
-//            if let contract = item.contract {
-//                print(item.contractInfo(), contract)
-//            }
-//        }
-//        print("-------------------------")
+        for item in employees {
+            if let contract = item.contract {
+                print(item.contractInfo(), contract)
+            }
+        }
+        print("-------------------------")
+        let p5 = Permanent(nbChildren: 1, married: true, monthlySalary: 5000, bonusPerChildPerMonth: 200, accumulatedDays: 30)
+        Matt.signContract(contract: p5)
+        print("-------------------------")
+        print("Contracts: ")
+        print("-------------------------")
+        for item in employees {
+            if let contract = item.contract {
+                print(item.contractInfo(), contract)
+            }
+        }
+        print("-------------------------")
     }
     
     

@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Temporary: Employee {
+class Temporary: Contract {
     private var _hourlySalary: Int = 0
     private var _accumulatedHours: Int = 0
     
@@ -22,14 +22,12 @@ class Temporary: Employee {
     }
     
     init(hourlySalary: Int, accumulatedHours: Int) {
-        super.init(name: "", birthYear: 0)
         self._hourlySalary = hourlySalary
         self._accumulatedHours = accumulatedHours
     }
-    
-    override init(name: String, birthYear: Int, rate: Int = 100, employeeVehicle: Vehicle? = nil) {
-        super.init(name: name, birthYear: birthYear)
-        self._hourlySalary = hourlySalary
-        self._accumulatedHours = accumulatedHours
+
+    func accumulatedSalary() -> Int {
+        let salary = hourlySalary * accumulatedHours
+        return salary
     }
 }
