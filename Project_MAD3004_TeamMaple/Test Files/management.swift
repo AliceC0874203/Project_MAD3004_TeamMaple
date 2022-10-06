@@ -48,7 +48,7 @@ struct Management {
         let Matt = Programmer(name: "Matt", birthYear: 1981, nbProjects: 5, rate: 110, employeeVehicle: vt4)
         let Sarah = Programmer(name: "Sarah", birthYear: 1986, nbProjects: 3, employeeVehicle: vt3)
         
-        let p1 = Permanent(nbChildren: 2, married: true, monthlySalary: 6000, bonusPerChildPerMonth: 200, accumulatedDays: 17)
+//        let p1 = Permanent(nbChildren: 2, married: true, monthlySalary: 6000, bonusPerChildPerMonth: 200, accumulatedDays: 17)
 //        let p2 = Permanent(nbChildren: 3, married: false, monthlySalary: 5000, bonusPerChildPerMonth: 150, accumulatedDays: 19)
 //        let t1 = Temporary(hourlySalary: 60, accumulatedHours: 30)
 //        let t2 = Temporary(hourlySalary: 50, accumulatedHours: 60)

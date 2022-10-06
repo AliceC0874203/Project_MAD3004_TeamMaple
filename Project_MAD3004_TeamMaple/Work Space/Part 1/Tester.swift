@@ -45,3 +45,14 @@ class Tester: Employee {
 //        print("We have a new employee: \(name), a tester");
     }
 }
+
+extension Tester {
+    override var description: String {
+        let a =
+        """
+        Name: \(name), a Tester \n
+        """
+        
+        return a + super.description
+    }
+}

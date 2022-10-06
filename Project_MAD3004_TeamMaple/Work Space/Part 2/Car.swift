@@ -37,5 +37,14 @@ class Car: Vehicle {
         self._gear = gear
         self._type = type
     }
-    
+}
+
+extension Car {
+    override var description: String {
+        let a = """
+        \n\t- gear type: \(gear)
+        \t- type: \(type)
+        """
+        return super.description + a
+    }
 }

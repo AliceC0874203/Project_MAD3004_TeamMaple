@@ -30,3 +30,12 @@ class Motorcycle: Vehicle {
         self._sidecar = sidecar
     }
 }
+
+extension Motorcycle {
+    override var description: String {
+        let a = """
+        \n\t- \(sidecar ? "with" : "without") sidecar
+        """
+        return super.description + a
+    }
+}
