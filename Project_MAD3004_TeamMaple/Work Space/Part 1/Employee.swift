@@ -91,7 +91,7 @@ extension Employee : CustomStringConvertible {
         """
         Age: \(age)
         \(employeeVehicle ?? Vehicle())
-        \(name) has an Occupation rate: \(rate)% 
+        \(name) has an Occupation rate: \(rate)%
         """
         
         return a
