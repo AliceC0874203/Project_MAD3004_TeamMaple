@@ -12,10 +12,10 @@ class Employee {
     //necessary variables
     private var _name : String
     private var _birthYear : Int
-    private var _age : Int;
+    private var _age : Int
     private var _monthlyIncome : Double
-    private var _rate : Int = 100;
-    private var _employeeVehicle : Vehicle;
+    private var _rate : Int = 100
+    private var _employeeVehicle : Vehicle?
     
     //defining setter & getter
     var name: String {
@@ -41,53 +41,25 @@ class Employee {
     var rate: Int {
         get {
             if(self.rate < 10){
-                return 10;
+                return 10
             }else if(self.rate > 100){
-                return 100;
+                return 100
             }
             return _rate
         }
         set { _rate = newValue }
     }
     
-    
-    var employeeVehicle: Vehicle {
+    var employeeVehicle: Vehicle? {
         get { return _employeeVehicle }
-    }
-    
-    
-    //empty initialization
-    init(){
-        self._name = ""
-        self._birthYear = 2000
-        self._age = 0
-        self._monthlyIncome = 0;
-        self._rate = 0;
-        self._employeeVehicle = Car()
     }
 
     //initialisation as per test case
-    init(name: String) {
-        self._name = name;
-        self._birthYear = 0;
+    init(name: String,birthYear:Int,rate: Int,employeeVehicle: Vehicle? = nil) {
+        self._name = name
+        self._birthYear = birthYear
         self._age = 0
-        self._monthlyIncome = 0;
-        self._rate = 0;
-        self._employeeVehicle = Car()
-    }
-    init(name: String,birthYear:Int) {
-        self._name = name;
-        self._birthYear = birthYear;
-        self._age = 0
-        self._monthlyIncome = 0;
-        self._rate = 0;
-        self._employeeVehicle = Car()
-    }
-    init(name: String,birthYear:Int,rate: Int) {
-        self._name = name;
-        self._birthYear = birthYear;
-        self._age = 0
-        self._monthlyIncome = 0;
+        self._monthlyIncome = 0
         if(rate < 10) {
             self._rate = 10
         }
@@ -97,112 +69,34 @@ class Employee {
         else {
             self._rate = rate
         }
-        self._employeeVehicle = Car()
-    }
-    init(name: String,birthYear:Int,employeeVehicle: Vehicle) {
-        self._name = name;
-        self._birthYear = birthYear;
-        self._age = 0
-        self._monthlyIncome = 0;
-        self._employeeVehicle = employeeVehicle
-    }
-    init(name: String,birthYear:Int,rate: Int,employeeVehicle: Vehicle) {
-        self._name = name;
-        self._birthYear = birthYear;
-        self._age = 0
-        self._monthlyIncome = 0;
-        if(rate < 10) {
-            self._rate = 10
-        }
-        else if (rate > 100){
-            self._rate = 100
-        }
-        else {
-            self._rate = rate
-        }
-        self._employeeVehicle = employeeVehicle
-    }
-    //end of initialisation as per test case
-    
-//    init(name: String, birthYear: Int, age: Int, monthlyIncome: Double, rate: Int) {
-//        self._name = name;
-//        self._birthYear = birthYear;
-//        self._age = age;
-//        self._monthlyIncome = monthlyIncome;
-//        if(rate < 10) {
-//            self._rate = 10
-//        }
-//        else if (rate > 100){
-//            self._rate = 100
-//        }
-//        else {
-//            self._rate = rate
-//        }
-//        self._employeeVehicle = Car(make: "Lamborghini", plate: "Custom Plate", color: "White", category: "Family", gear: "Manual", type: "Sport")
-//    }
-//
-//    init(name: String, birthYear: Int, age: Int, monthlyIncome: Double, rate: Int, employeeVehicle: Vehicle) {
-//        self._name = name;
-//        self._birthYear = birthYear;
-//        self._age = age;
-//        self._monthlyIncome = monthlyIncome;
-//        if(rate < 10) {
-//            self._rate = 10
-//        }
-//        else if (rate > 100){
-//            self._rate = 100
-//        }
-//        else {
-//            self._rate = rate
-//        }
-//        self._employeeVehicle = employeeVehicle;
-//    }
-    
-    
-    
         
+        if let employeeVehicle = employeeVehicle {
+            self._employeeVehicle = employeeVehicle
+        }
+    }
+    
     func calculateAge(birthYear: Int) -> Int {
-//        var year = 1988
-//        year = birthYear
-//        let dob = Date(year: year, month: 1, day: 1)
-//        let age = dob.age
+        if birthYear > 0 {
+            let date = Date()
+            let currentYear = Calendar.current.component(.year, from: date)
+            return currentYear - birthYear
+        }
         
-        let currentYear = 2022
-        let age = currentYear - birthYear
-        
-        return age
+        return 0
     }
     
-    func printData(_ msg :String = "We have a new employee"){
+    func printData(_ msg :String){
         print(msg)
-    }
-    
-    func printData(_msg:String,vehicle:Vehicle){
-        
     }
 }
 
 //MARK: - Employee Extension
 extension Employee : CustomStringConvertible {
     @objc var description: String {
-        /**
-         Name: Serge, a Manager
-         Age: 33
-         Employee has a car
-              - make: Lamborghini
-              - plate: Custom Plate
-              - color: White
-              - category: Family
-              - gear type: Manual
-              - type: Sport
-         Serge has an Occupation rate: 100% He/She travelled 4 days and
-         has brought 30 new clients.
-         His/Her estimated annual income is 15400.0
-         */
         let a =
         """
         Age: \(age)
-        \(employeeVehicle)
+        \(employeeVehicle ?? Vehicle())
         """
         
         return a

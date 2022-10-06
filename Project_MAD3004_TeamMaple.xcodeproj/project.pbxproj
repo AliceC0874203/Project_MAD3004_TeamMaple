@@ -18,7 +18,6 @@
 		995D54A528E3C64B00943C2F /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D54A428E3C64B00943C2F /* Employee.swift */; };
 		995D54A728E3C6D600943C2F /* Permanent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D54A628E3C6D600943C2F /* Permanent.swift */; };
 		995D54A928E3C6E700943C2F /* Temporary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 995D54A828E3C6E700943C2F /* Temporary.swift */; };
-		BB97950128EB82C8002CD68C /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB97950028EB82C8002CD68C /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,7 +45,6 @@
 		995D54A428E3C64B00943C2F /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		995D54A628E3C6D600943C2F /* Permanent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permanent.swift; sourceTree = "<group>"; };
 		995D54A828E3C6E700943C2F /* Temporary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Temporary.swift; sourceTree = "<group>"; };
-		BB97950028EB82C8002CD68C /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +109,6 @@
 				995D549728E3C58500943C2F /* Manager.swift */,
 				995D549928E3C59000943C2F /* Tester.swift */,
 				995D54A428E3C64B00943C2F /* Employee.swift */,
-				BB97950028EB82C8002CD68C /* DateExtension.swift */,
 			);
 			path = "Part 1";
 			sourceTree = "<group>";
@@ -194,7 +191,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				995D549F28E3C5F200943C2F /* Vehicle.swift in Sources */,
-				BB97950128EB82C8002CD68C /* DateExtension.swift in Sources */,
 				995D54A928E3C6E700943C2F /* Temporary.swift in Sources */,
 				995D54A528E3C64B00943C2F /* Employee.swift in Sources */,
 				995D549228E3C4B700943C2F /* main.swift in Sources */,

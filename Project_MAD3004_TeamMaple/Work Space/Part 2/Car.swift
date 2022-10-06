@@ -8,8 +8,8 @@
 import Foundation
 
 class Car: Vehicle {
-    private var _gear: String = "";
-    private var _type: String = "";
+    private var _gear: String = ""
+    private var _type: String = ""
     
     var gear:String{
         get{return _gear}
@@ -20,19 +20,7 @@ class Car: Vehicle {
         set{_type = newValue}
     }
     
-    override init() {
-        super.init()
-        self._gear = ""
-        self._type = ""
-    }
-    
-    init(gear: String, type: String) {
-        super.init()
-        self._gear = gear
-        self._type = type
-    }
-    
-    init(make: String, plate: String, color: String, category: String,gear: String, type: String) {
+    init(make: String, plate: String, color: String, category: String, gear: String, type: String) {
         super.init(_make : make, _plate :plate, _color :color, _category :category)
         self._gear = gear
         self._type = type
@@ -42,9 +30,14 @@ class Car: Vehicle {
 extension Car {
     override var description: String {
         let a = """
+        Employee has a car\n
+        """
+        
+        let b = """
         \n\t- gear type: \(gear)
         \t- type: \(type)
         """
-        return super.description + a
+        
+        return a + super.description + b
     }
 }
