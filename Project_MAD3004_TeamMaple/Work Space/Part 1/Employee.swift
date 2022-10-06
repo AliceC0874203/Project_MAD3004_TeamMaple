@@ -39,14 +39,7 @@ class Employee {
     }
     
     var rate: Int {
-        get {
-            if(self.rate < 10){
-                return 10
-            }else if(self.rate > 100){
-                return 100
-            }
-            return _rate
-        }
+        get { return _rate }
         set { _rate = newValue }
     }
     
@@ -55,11 +48,12 @@ class Employee {
     }
 
     //initialisation as per test case
-    init(name: String,birthYear:Int,rate: Int,employeeVehicle: Vehicle? = nil) {
+    init(name: String,birthYear:Int,rate: Int = 100,employeeVehicle: Vehicle? = nil) {
         self._name = name
         self._birthYear = birthYear
         self._age = 0
         self._monthlyIncome = 0
+        
         if(rate < 10) {
             self._rate = 10
         }
@@ -97,6 +91,7 @@ extension Employee : CustomStringConvertible {
         """
         Age: \(age)
         \(employeeVehicle ?? Vehicle())
+        \(name) has an Occupation rate: \(rate)% 
         """
         
         return a
