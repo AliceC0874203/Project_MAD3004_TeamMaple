@@ -8,7 +8,6 @@
 import Foundation
 
 class Employee {
-    
     //necessary variables
     private var _name : String
     private var _birthYear : Int
@@ -16,7 +15,6 @@ class Employee {
     private var _monthlyIncome : Double
     private var _rate : Int = 100
     private var _employeeVehicle : Vehicle?
-    private var _contract : Contract?
     
     //defining setter & getter
     var name: String {
@@ -46,11 +44,6 @@ class Employee {
     
     var employeeVehicle: Vehicle? {
         get { return _employeeVehicle }
-    }
-    
-    var contract: Contract? {
-        get { return _contract }
-        set { _contract = newValue }
     }
 
     //initialisation as per test case
@@ -107,12 +100,4 @@ extension Employee : CustomStringConvertible {
         
         return a
     }    
-    
-    func signContract(contract : Contract?){
-        self.contract = contract
-    }
-    
-    func contractInfo() -> Contract?{
-        return self.contract ?? nil
-    }
 }
