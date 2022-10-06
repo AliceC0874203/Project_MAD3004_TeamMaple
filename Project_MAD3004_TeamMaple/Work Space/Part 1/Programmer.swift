@@ -10,6 +10,7 @@ import Foundation
 class Programmer: Employee {
     
     private var _nbProjects: Int=0
+    private let _GainFactorProjjects = 200
     
     var nbProjects: Int {
         get { return _nbProjects }
@@ -25,6 +26,12 @@ class Programmer: Employee {
     func printMessage() {
         printData("We have a new employee: \(name), a programmer")
     }
+    
+    override func annualIncome() -> Double {
+        let baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate)
+        let bonus = Double(_GainFactorProjjects * nbProjects)
+        return baseYearlyIncome + bonus
+    }
 }
 
 extension Programmer {
@@ -35,8 +42,8 @@ extension Programmer {
         """
         
         let b = """
-        and completed \(nbProjects) projects.
-        His/Her estimated annual income is
+         and completed \(nbProjects) projects.
+        His/Her estimated annual income is \(annualIncome())
         """
         return a + super.description + b
     }

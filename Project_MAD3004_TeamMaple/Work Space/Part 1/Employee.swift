@@ -82,6 +82,11 @@ class Employee {
     func printData(_ msg :String){
         print(msg)
     }
+    
+    func annualIncome() -> Double {
+        let baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate)
+        return baseYearlyIncome
+    }
 }
 
 //MARK: - Employee Extension

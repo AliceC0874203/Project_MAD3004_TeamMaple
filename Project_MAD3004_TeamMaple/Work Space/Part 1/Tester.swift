@@ -10,6 +10,8 @@ import Foundation
 class Tester: Employee {
     private var _nbBugs: Int=0
     
+    private let _GainFactorError = 10
+    
     var nbBugs: Int {
         get { return _nbBugs }
         set { _nbBugs = newValue }
@@ -20,9 +22,15 @@ class Tester: Employee {
         self.nbBugs = nbBugs
         printMessage()
     }
-
+    
     func printMessage() {
         printData("We have a new employee: \(name), a tester")
+    }
+    
+    override func annualIncome() -> Double {
+        let baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate)
+        let bonus = Double(_GainFactorError * nbBugs)
+        return baseYearlyIncome + bonus
     }
 }
 
@@ -34,8 +42,8 @@ extension Tester {
         """
         
         let b = """
-        and corrected \(nbBugs) bugs.
-        His/Her estimated annual income is
+         and corrected \(nbBugs) bugs.
+        His/Her estimated annual income is \(annualIncome())
         """
         return a + super.description + b
     }
