@@ -45,6 +45,7 @@ extension Tester {
          and corrected \(nbBugs) bugs.
         His/Her estimated annual income is \(annualIncome())
         """
+        
         return a + super.description + b
     }
 }

@@ -6,29 +6,34 @@
 //
 
 import Foundation
-class Contract {
 
+class Contract: CustomStringConvertible {
+    var description: String {
+        return ""
+    }
 }
+
 protocol EmployeeContract {
     var contract : Contract? { get set }
 
     func signContract(contract : Contract)
-    func contractInfo() -> Contract?
+    func contractInfo() -> String
 }
 
 extension Employee : EmployeeContract {
-    
-    private static var _contract : Contract?
-    var contract: Contract? {
-        get { return Employee._contract }
-        set { Employee._contract = newValue }
-    }
-        
     func signContract(contract: Contract) {
         self.contract = contract
     }
     
-    func contractInfo() -> Contract? {
-        return self.contract ?? nil
+    func contractInfo() -> String {
+        if type(of: self) == Manager.self {
+            return "\(name) is a manager."
+        } else if type(of: self) == Programmer.self {
+            return "\(name) is a programmer."
+        } else if type(of: self) == Tester.self {
+            return "\(name) is a tester."
+        }
+        
+        return "\(name)"
     }
 }

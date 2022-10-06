@@ -57,4 +57,13 @@ class Permanent: Contract {
         cumulativeSalary = (salary / 20) * accumulatedDays
         return cumulativeSalary
     }
+    
+    override var description: String {
+        let a = """
+        he \(married ? "is" : "is not") married and he/she has \(nbChildren) children.
+        He/She has worked for \(accumulatedDays) days and upon contract his/her monthly salary is \(accumulatedSalary()).
+        """
+        return super.description + a
+    }
 }
+

@@ -45,6 +45,12 @@ class Employee {
     var employeeVehicle: Vehicle? {
         get { return _employeeVehicle }
     }
+    
+    private  var _contract : Contract?
+    var contract: Contract? {
+        get { return _contract ?? Contract() }
+        set { _contract = newValue }
+    }
 
     //initialisation as per test case
     init(name: String,birthYear:Int,rate: Int = 100,employeeVehicle: Vehicle? = nil) {
