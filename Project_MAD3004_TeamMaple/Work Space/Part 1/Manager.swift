@@ -35,7 +35,7 @@ class Manager: Employee {
     }
     
     override func annualIncome() -> Double {
-        let baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate/100)
+        let baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate)/100
         let clientBonus = Double(_GainFactorClient * nbClients)
         let expenditure = Double(_GainFactorTravel * nbTravelDays)
         return baseYearlyIncome + clientBonus + expenditure

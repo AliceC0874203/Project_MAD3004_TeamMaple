@@ -12,7 +12,7 @@ class Contract: CustomStringConvertible {
         return ""
     }
     
-    func accumulatedSalary() -> Int {
+    func accumulatedSalary() -> Double {
         return 0
     }
         
@@ -28,7 +28,7 @@ protocol EmployeeContract {
 extension Employee : EmployeeContract {
     
     func signContract(contract: Contract) {
-        monthlyIncome = Double(contract.accumulatedSalary());
+        monthlyIncome = contract.accumulatedSalary();
         self.contract = contract
     }
     
