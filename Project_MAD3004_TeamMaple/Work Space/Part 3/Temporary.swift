@@ -26,7 +26,7 @@ class Temporary: Contract {
         self._accumulatedHours = accumulatedHours
     }
 
-    func accumulatedSalary() -> Int {
+    override func accumulatedSalary() -> Int {
         let salary = hourlySalary * accumulatedHours
         return salary
     }

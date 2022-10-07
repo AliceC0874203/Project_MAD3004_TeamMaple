@@ -28,7 +28,7 @@ class Tester: Employee {
     }
     
     override func annualIncome() -> Double {
-        let baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate)
+        let baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate/100)
         let bonus = Double(_GainFactorError * nbBugs)
         return baseYearlyIncome + bonus
     }

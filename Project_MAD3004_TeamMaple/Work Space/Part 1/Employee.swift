@@ -89,7 +89,7 @@ class Employee {
     }
     
     func annualIncome() -> Double {
-        let baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate)
+        let baseYearlyIncome = (monthlyIncome * Double(12)) * Double(rate/100)
         return baseYearlyIncome
     }
 }
